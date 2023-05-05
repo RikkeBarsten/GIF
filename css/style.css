@@ -4,11 +4,23 @@
 rgb(37, 150, 190)
 */
 :root {
-    --primary: #d71921;
+    --primary: #d71921 !important;
     --secondary: #2d0507;
     --light: #F5F5F5;
     --dark: #14141F;
 }
+
+/*Override bootstrap primary colour*/
+.text-primary {
+    color: #d71921 !important;
+}
+
+
+.btn-primary {
+    background-color: #d71921;
+    border-color: #d71921;
+}
+
 
 .fw-medium {
     font-weight: 600 !important;
