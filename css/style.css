@@ -21,6 +21,10 @@ rgb(37, 150, 190)
     border-color: #d71921;
 }
 
+.mx-1 {
+    /*background-color: #d71921 !important;*/
+    border-color: #d71921;
+}
 
 .fw-medium {
     font-weight: 600 !important;
