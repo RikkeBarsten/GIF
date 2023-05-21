@@ -198,6 +198,13 @@ rgb(37, 150, 190)
     background-size: cover;
 }
 
+.hero-header-gymnastik {
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(https://images.jfmedier.dk/images/8/81/816/8167f128-1a3f-49dc-8626-0673bb0348cb_1_90_0_268_5184_2920_600_338_c92f3a28.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
