@@ -192,7 +192,7 @@ rgb(37, 150, 190)
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/eksempel_fodbold.jpg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/fodbold.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,6 +200,20 @@ rgb(37, 150, 190)
 
 .hero-header-gymnastik {
     background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(https://images.jfmedier.dk/images/8/81/816/8167f128-1a3f-49dc-8626-0673bb0348cb_1_90_0_268_5184_2920_600_338_c92f3a28.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-header-crossgym {
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(https://www.sjahto.nl/content/uploads/2020/02/sjahto-1156878593-1500x960.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-header-badminton {
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(https://gesten-if.dk/onewebmedia/15896083_255940001485699_5974165853481805357_o.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
