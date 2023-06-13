@@ -192,7 +192,14 @@ rgb(37, 150, 190)
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/fodbold.jpg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/GIF-U12-10.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-header-fodbold {
+    background: linear-gradient(rgba(20, 20, 31, .4), rgba(20, 20, 31, .4)), url(../img/GIF-U12-13.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
