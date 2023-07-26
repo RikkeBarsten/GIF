@@ -35,6 +35,17 @@
 </head>
 
 <body>
+
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId={APP_ID}";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -117,8 +128,37 @@
     </div>
     <!-- Navbar & Hero End -->
 
+    <!-- FB Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Aktuelt</h6>
+                <h1 class="mb-5">Nyheder fra GIF</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp text-center" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="fb-page" 
+                        data-href="https://www.facebook.com/GIF1901" data-tabs="timeline"
+                        data-small-header="true" 
+                        data-width="500"
+                        data-height="500"
+                        data-hide-cover="true"
+                        data-show-facepile="true">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="https://www.facebook.com/facebook">
+                                <a href="https://www.facebook.com/facebook">Facebook</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- FB End -->
 
-    <!-- Aktuelt Start -->
+
+    <!-- Aktuelt Start 
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -134,20 +174,20 @@
                     Gesten Idrætsforening er tilmeldt med Rene Lohse som holdkaptajn.
                     Hvis du ønsker at deltage eller støtte, kig her: <a href="https://www.stafetforlivet.dk/stafet/vejen/tilmeldte-hold/hold/16504">stafetforlivet.dk</a></p>
                     <p class="mb-4">Ved spørgsmål kontakt Rene Lohse på mail: <a href="mailto:renelohse@msn.com">renelohse@msn.com</a></p>
-                    <!--a class="btn btn-primary py-3 px-5 mt-2" href="">Læs mere</a-->
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Læs mere</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Aktuelt End -->
+    Aktuelt End -->
 
 
-    <!-- Aktiviter Start -->
+    <!-- Info Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Aktiviter</h6>
-                <h1 class="mb-5">Hvad sker i GIF</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">INFO</h6>
+                <h1 class="mb-5">Mere information om GIF</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -305,7 +345,7 @@
                     <h4 class="text-white mb-3">Kontakt</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bækkevej 9A, 6621 Gesten</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>CVR 29101132</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>pressengif@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>pressengif@gesten-if.dk</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -361,8 +401,8 @@
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
                             <a href="">Hjem</a>
-                            <a href="">Cookies</a>
-                            <!--a href="">Help</a>
+                            <!--a href="">Cookies</a>
+                            <a href="">Help</a>
                             <a href="">FQAs</a-->
                         </div>
                     </div>
