@@ -79,13 +79,13 @@
         nav : false,
         responsive: {
             0:{
-                items:2
-            },
-            768:{
                 items:3
             },
-            992:{
+            768:{
                 items:4
+            },
+            992:{
+                items:5
             }
         }
     });
