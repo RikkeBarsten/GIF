@@ -236,6 +236,26 @@ ul.no-bullets {
     color: rgba(255, 255, 255, .5);
 }
 
+.calendar-embed,
+.map-embed {
+    border: 0;
+    width: 100%;
+}
+
+.calendar-embed {
+    height: 700px;
+}
+
+.map-embed {
+    height: 400px;
+}
+
+@media (max-width: 575.98px) {
+    .calendar-embed {
+        height: 620px;
+    }
+}
+
 
 /*** Section Title ***/
 .section-title {

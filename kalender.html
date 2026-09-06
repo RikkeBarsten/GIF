@@ -35,7 +35,120 @@
 </head>
 
 <body>
-    <iframe src="https://webmail.one.com/calendar/embed.html?locale=en&showAllEvents=false&tz=Europe%2FCopenhagen&src=6db036f64ae34244aafcda365a95fe3d&name=X-tr%C3%A6ning&color=%23B30016" style="border-width: 0" scrolling="no" frameborder="0" width="800" height="600"></iframe>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Bækkevej 9A, 6621 Gesten</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/GIF1901" aria-label="Gesten Idrætsforening på Facebook"><i class="fab fa-facebook-f fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/GIF_logo.png" alt="Gesten Idrætsforening">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Åbn menu">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Hjem</a>
+                    <a href="fodbold.html" class="nav-item nav-link">Fodbold</a>
+                    <a href="gymnastik.html" class="nav-item nav-link">Gymnastik</a>
+                    <a href="x-training.html" class="nav-item nav-link">X-training</a>
+                    <a href="badminton.html" class="nav-item nav-link">Badminton</a>
+                    <a href="om.html" class="nav-item nav-link">Om</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white animated slideInDown">Kalender</h1>
+                        <nav aria-label="Brødkrummer">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html">Hjem</a></li>
+                                <li class="breadcrumb-item text-white active" aria-current="page">Kalender</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Calendar Start -->
+    <main class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Kalender</h6>
+                <h1 class="mb-5">Kommende aktiviteter</h1>
+            </div>
+            <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                <div class="col-12">
+                    <iframe class="calendar-embed" title="X-training kalender" src="https://webmail.one.com/calendar/embed.html?locale=en&amp;showAllEvents=false&amp;tz=Europe%2FCopenhagen&amp;src=6db036f64ae34244aafcda365a95fe3d&amp;name=X-tr%C3%A6ning&amp;color=%23B30016" scrolling="no" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Calendar End -->
+
+    <!-- Footer Start -->
+    <footer class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <h4 class="text-white mb-3">Kontakt</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bækkevej 9A, 6621 Gesten</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>CVR 29101132</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>kontakt@gesten-if.dk</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/GIF1901" aria-label="Gesten Idrætsforening på Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <iframe class="map-embed" title="Kort over Gesten Idrætsforening" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=da&amp;q=B%C3%A6kkevej%209A,%206621%20Gesten+(Gesten%20Idr%C3%A6tsforening)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright py-4">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">Gesten Idrætsforening</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Hjem</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
